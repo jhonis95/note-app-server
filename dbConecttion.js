@@ -5,7 +5,8 @@ const connection = mysql.createConnection({
     port: '3306',
     user: db_user,
     password: db_password,
-    database: 'cadastro'
+    database: 'cadastro',
+    multipleStatements: true
 })
 
 module.exports=connection
